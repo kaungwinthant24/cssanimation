@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Transform With Rotate</title>
+
+	<style type="text/css">
+		
+
+		.container{
+			width: 1000px;
+			background: grey;
+		}
+
+		.container .move{
+			width: 150px;
+			height: 60px;
+
+			background: red;
+			color: $fff;
+
+			text-align: center;
+			line-height: 60px;
+
+			font-size: 20px;
+
+			margin: 20px 0;
+		}
+
+		#rotate:hover{
+			/*rotate(angle)*/
+			transform: rotate(45deg);
+			/*transform: rotate(-45deg);*/
+			/*transform: rotate(90deg);*/
+			/*transform: rotate(180deg);*/
+		}
+
+		#rotatex:hover{
+			/*rotate(angle)*/
+			transform: rotateX(45deg);
+			/*transform: rotateX(-45deg);
+			transform: rotateX(90deg);
+			transform: rotateX(180deg);*/
+		}
+
+		#rotatey:hover{
+			/*rotate(angle)*/
+			/*transform: rotateY(45deg);*/
+			/*transform: rotateY(-45deg);*/
+			transform: rotateY(90deg);
+			/*transform: rotateY(180deg);*/
+		}
+
+		img{
+			width: 300px;
+
+			display: block;
+			margin: auto;
+
+			transition: transform 2s;
+		}
+		img:hover{
+			/*transform: rotate(45deg);*/
+			/*transform: rotate(-45deg);*/
+			/*transform: rotate(90deg);*/
+			/*transform: rotate(180deg);*/
+			/*transform: rotate(360deg);*/
+
+			/*1turn = 360deg*/
+			/*transform: rotate(1turn);*/
+			/*transform: rotate(0.5turn);*/
+
+			/*400grad = 360deg*/
+			transform: rotate(400grad);
+		}
+	</style>
+
+</head>
+<body>
+	<div class="container">
+		<div id="rotate" class="move">rotate me</div>
+	</div>
+
+	<div class="container">
+		<div id="rotatex" class="move">rotate x</div>
+	</div>
+
+	<div class="container">
+		<div id="rotatey" class="move">rotate y</div>
+	</div>
+
+	<hr/>
+
+	<img src="./img/dog.jpg"  alt="dog" />
+</body>
+</html>
+
+
+<!-- 
+rotate(xy)
+rotateX()
+rotateY() 
+-->

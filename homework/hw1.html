@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HomeWork1(WDF6683)</title>
+
+	<style type="text/css">
+		
+		body{
+			height: 100vh;
+			
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+
+
+		.container{
+			width: 500px;
+			background-color: #f4f4f4;
+		} 
+
+		.div1{
+			width: 250px;
+			height: 100px;
+			background-color: pink;
+
+			border: 1px solid black;
+			box-shadow: -5px 0 10px rgba(0, 0, 0, 0.7 );
+
+			margin: auto;
+			padding: 10px;
+
+			perspective: 500px;
+			perspective-origin: top;
+
+			position: relative;
+
+			
+		}
+
+		.div2{
+			width: 200px;
+			height: 100px;
+			background-color: lightseagreen;
+
+			box-shadow: -5px 0 10px rgba(0, 0, 0, 0.7 );
+			border: 1px solid black;
+
+			transform: rotateX(45deg);
+
+			padding: 50px;
+
+			position: absolute;
+			left: -17px;
+			top: -130px;
+
+			z-index: 6;
+
+		}
+
+		.div2 h3{
+			font-size: 30px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.div3{
+			width: 80px;
+			height: 100px;
+			/*background-color: yellow;*/
+
+			position: absolute;
+			left: 36%;
+			top: 36px;
+
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			/*z-index: 7;*/
+
+			margin-top: -15px;
+		}
+
+		.div4{
+			width: 40px;
+			height: 100px;
+			background-color: darkgoldenrod;
+			border-left: 1px solid black;
+			border-right: 1px solid black;
+			box-shadow: -5px 0 10px rgba(0, 0, 0, 0.7 );
+			border-bottom: 1px solid black;
+
+			transition: all 1s;
+		}
+		.div4:hover{
+			height: 110px;
+
+			transform: skewY(30deg) scaleX(0.5);			
+		}
+
+		.div5{
+			width: 40px;
+			height: 110px;
+
+			background-color: darkgoldenrod;
+
+			border-right: 1px solid black;
+			border-bottom: 1px solid black;
+			border-left: 1px solid black;
+			box-shadow: 5px 0 10px rgba(0, 0, 0, 0.7 );
+
+			transform: skewY(-	30deg) scaleX(0.5);
+
+			transition: all 1s;
+		}
+		.div5:hover{
+			height: 100px;
+			transform: none;
+		}
+
+
+
+
+
+	</style>
+</head>
+<body>
+
+	
+	
+	<div class="container">
+
+		<div class="div1">One
+			<div class="div2"><h3>WDF 6683</h3></div>
+			<div class="div3">
+				<div class="div4"></div>
+				<div class="div5"></div>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
+
+<!-- transform-origin:left or right
+rotate -->

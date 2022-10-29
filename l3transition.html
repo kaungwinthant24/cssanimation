@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Transition</title>
+
+	<style type="text/css">
+
+		.div1{
+			width: 290px;
+			height: 90px;
+			background: pink;
+
+			color: #fff;
+			font-size: 20px;
+
+			text-align: center;
+			line-height: 90px;
+
+			transition-property: background ;
+			transition-duration: 1500ms /*or 1.5s*/;
+		}
+		.div1:hover{
+			background: red;
+		}
+
+
+		.div2{
+			width: 290px;
+			height: 90px;
+			background: pink;
+
+			color: #fff;
+			font-size: 20px;
+			
+			text-align: center;
+			line-height: 90px;
+
+			/*transition-property: width;*/
+			/*transition-property: width,background,color;*/
+			/*transition-property: all;
+			transition-duration: 1500ms;*/
+
+			/*short hand*/
+			/*transition: width 1s;*/
+			transition: width 1s,background 1.5s,color 2s;
+		}
+		.div2:hover{
+			width: 600px;
+			background: yellow;
+			color: #000;
+		}
+
+
+	</style>
+</head>
+<body>
+	<div class="div1">Css Transitioin Div1</div>
+	<hr/>
+	<div class="div2">Css Transitioin Div2</div>
+</body>
+</html>
